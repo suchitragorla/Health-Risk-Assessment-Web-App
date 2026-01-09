@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Health Risk Assessment</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="bg-gray-100 min-h-screen flex items-center justify-center">
+
+  <div class="bg-white p-6 rounded-lg shadow-md w-full max-w-md">
+    <h2 class="text-2xl font-bold mb-4 text-center">Health Risk Assessment</h2>
+
+    <input id="age" type="number" placeholder="Age"
+      class="w-full mb-3 p-2 border rounded">
+
+    <select id="gender" class="w-full mb-3 p-2 border rounded">
+      <option value="">Select Gender</option>
+      <option>Male</option>
+      <option>Female</option>
+      <option>Other</option>
+    </select>
+
+    <input id="height" type="number" placeholder="Height (cm)"
+      class="w-full mb-3 p-2 border rounded">
+
+    <input id="weight" type="number" placeholder="Weight (kg)"
+      class="w-full mb-3 p-2 border rounded">
+
+    <select id="condition" class="w-full mb-3 p-2 border rounded">
+      <option value="">Health Condition</option>
+      <option value="none">None</option>
+      <option value="diabetes">Diabetes</option>
+      <option value="bp">Blood Pressure</option>
+      <option value="both">Both</option>
+    </select>
+
+    <button onclick="calculateRisk()"
+      class="w-full bg-blue-600 text-white p-2 rounded hover:bg-blue-700">
+      Assess Risk
+    </button>
+
+    <div id="result" class="mt-4 text-center"></div>
+  </div>
+
+<script src="script.js"></script>
+</body>
+</html>
